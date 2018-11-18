@@ -1,0 +1,5 @@
+---
+- name: Component Name
+  yum:
+   name: docker
+   state: latest

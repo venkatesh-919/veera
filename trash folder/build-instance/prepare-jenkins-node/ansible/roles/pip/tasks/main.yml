@@ -1,0 +1,7 @@
+---
+- name: Install EPEL Release and python PIP
+  yum: name={{ item }} state=latest
+  with_items:
+   - epel-release 
+   - python-pip
+

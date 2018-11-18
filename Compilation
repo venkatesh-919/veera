@@ -1,0 +1,10 @@
+LIBS = -lkernal32 -luser32 -lgdi32 -lopengl32
+CFLAGS = -Wall
+
+OBJ = 64bitmath.0 \
+monotone.o \
+node_sort.o \
+SRCS = $(OBJ:%.o=%.c)
+test: $(SRCS)
+
+gcc -c $(CFLAGS)  $< -O $@

@@ -1,0 +1,15 @@
+---
+- name: Install Java, Git, Docker, PIP, Boto3, AWS CLI, Maven, Sonar Scanner, Node
+  hosts: jenkins-node
+  connection: local
+  become: True
+  roles:
+    - java
+    - pip
+    - docker
+    - git
+    - boto3
+    - awscli
+    #- maven
+    #- sonarscanner
+    - node

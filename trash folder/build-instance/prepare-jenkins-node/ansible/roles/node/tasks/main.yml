@@ -1,0 +1,6 @@
+---
+- name: Install NodeJs
+  yum:
+   name: nodejs
+   state: latest
+   enablerepo: epel
